@@ -13,12 +13,15 @@ function init(){
 
   //Horn Selection -- correct image and audio 
   hornSelect.addEventListener('change', function(){
-
     const selected = hornSelect.value; 
     if (selected != 'select'){
       mainImg.src = `assets/images/${selected}.svg`;
       mainImg.alt = `${selected} visual`;
       audio.src = `assets/audio/${selected}.mp3`;
+    }
+    else{
+      mainImg.src = 'assets/images/no-image.png';
+      audio.src = '';
     }
   }); 
 
@@ -47,6 +50,7 @@ function init(){
       volumeIcon.alt = 'Volume level 3';
     }
   });
+
   //Play button 
   playButton.addEventListener('click', function(){
     if (hornSelect.value !== 'select'){
@@ -56,5 +60,4 @@ function init(){
       }
     }
   });
-
 }  
