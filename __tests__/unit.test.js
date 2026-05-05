@@ -73,3 +73,6 @@ test('Hex Color With Invalid Letters Returns False', () =>{
 test('Hex Color Without # Symbol Returns False', () =>{
     expect(isHexColor('#GGGGGG')).toBe(false);
 });
+
+
+
