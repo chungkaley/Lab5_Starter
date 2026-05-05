@@ -13,6 +13,3 @@ Expose.html: https://chungkaley.github.io/Lab5_Starter/expose.html
 
 Explore.html: https://chungkaley.github.io/Lab5_Starter/explore.html
 
-
-
-
